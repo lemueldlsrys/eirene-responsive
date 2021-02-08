@@ -1,0 +1,268 @@
+/* Page Styles */
+         
+ * {
+    border: 0;
+    margin: 0;
+    }
+
+body
+{
+    color: black;
+    font-family: 'Wire One', sans-serif;
+    }
+
+.banner{
+    background-color: #fffdfd;
+    background-size: cover;
+    background-position: center;
+    background-image: linear-gradient(rgba(206, 154, 154, 0.227), rgba(10, 10, 10, 0.549)),
+    url(bg.jpg);
+}
+
+a {
+    color: #585858;
+}
+
+header{
+    background-color: #ffe3da;
+    height: fit-content;
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.467), 0 2px 4px 0 rgba(0, 0, 0, 0.446);
+    }
+
+@-webkit-keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+         }
+         
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+    }
+         
+.fadeIn {
+-webkit-animation-name: fadeIn;
+animation-name: fadeIn;
+    }
+
+header h3,p{
+    -webkit-animation-duration: 5s;
+            animation-duration: 5s;
+            -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+}
+
+.logo h3{
+    font-family: 'Bilbo Swash Caps', cursive;
+    color: #4d4b4b;
+    font-size: 35pt;
+    cursor: pointer;
+    font-weight: lighter;
+    text-align: center;
+    }
+
+.logo p{
+    font-family: 'Wire One', sans-serif;
+    color: #090808; 
+    font-size: 30px;
+    cursor: pointer;
+    text-align: center;
+    padding-bottom: 10px;  
+    }
+
+/* End of Header */
+
+a  {text-decoration: none;}
+
+.menu_bar{ 
+    float: left;
+    font-size: 35px;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-right: 15px;
+    padding-left: 10px;
+    list-style: none;
+    position: relative;
+    width: 150px;
+    line-height: 55px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background: #eabfb9;
+    }
+
+.menu_bar img{
+    width: 20px;
+    height: 25px;
+    margin-right: 20px;
+}
+
+.submenu_bar li{
+    background: #eba4a4f5;
+    list-style: none;
+    width: 150px;
+    box-shadow: 1px 1px 2px #585858;
+    border-radius: 5px;
+    margin: 5px;
+    font-weight: normal;
+}
+
+.submenu_bar2 li{
+    font-size: 25px;
+    line-height: 45px;
+    background: #fa9595f1;
+    list-style: none;
+    width: 150px;
+    box-shadow: 1px 1px 2px #585858;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+ul ul a{ color: #fffbfb; }
+
+.submenu_bar{
+    opacity: 0;
+    position: absolute;
+    top: 160%;
+    visibility: hidden;
+    transition: all .60s ease;
+    -webkit-transition: all .60s ease;
+  }
+
+  .submenu_bar2{
+    opacity: 0;
+    position: absolute;
+    top: 60%;
+    left: 160px;
+    visibility: hidden;
+    transition: all .40s ease;
+    -webkit-transition: all .40s ease-out;
+  }
+  
+  ul li:hover > ul{
+    opacity: 1;
+    top: 100%;
+    visibility: visible;
+  }
+  
+
+  ul ul li:hover > ul{
+    top: 0%;
+    left: 80%;
+    opacity: 1;
+    visibility: visible;
+    backface-visibility: hidden;
+  }
+
+/* end of left navigation*/
+
+section{
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+
+#section1{
+    margin-top:0%;
+}
+
+.box{
+    width: 500px;
+    height: 300px;
+    padding-top: 5%;
+    background: #c5c2c269;
+    text-align: center;
+    margin: auto;
+    color: white;
+    border-radius: 5px;
+}
+
+.box h1{
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    margin: auto;
+    color:#1f1e1e;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.box p{
+    text-align: center;
+    color:#1f1e1e;
+    font-size: 30px;
+    line-height: 2;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.box p a{
+    font-family: 'Dawning of a New Day', cursive;
+    font-weight: bold;
+    color: #eba4a4;
+}
+
+#section2{
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.box2{
+    width: 100%;
+    height: 100%;
+    padding-top: 5%;
+    background: #30303027;
+    text-align: center;
+    margin: auto;
+    color: white;
+    border-radius: 5px;
+}
+
+.box2 h1{
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    margin: auto;
+    color:#1f1e1e;
+    margin-left: 50px;
+    margin-right: 50px;
+    font-family: 'Indie Flower', cursive;
+}
+
+.box2 p{
+    text-align: center;
+    color:#1f1e1e;
+    font-size: 30px;
+    line-height: 2;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.box2 p a{
+    text-decoration: ;
+    font-family: 'Dawning of a New Day', cursive;
+    font-weight: bold;
+    color: #eba4a4;
+}
+/* end of section */
+
+footer {
+    padding: 20px;
+    background-color: #ffe3da;
+    } 
+
+footer p{
+    text-align: center;
+    color: rgb(126, 123, 123);
+    font-size: 15pt;
+    } 
+
+
+
+
+
+
+
+
+
+
+
+
